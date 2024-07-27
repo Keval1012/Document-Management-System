@@ -1,0 +1,240 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ----------------------- Button ------------------------------ */
+
+.appButton {
+  min-width: 40%;
+  margin: 0 1%;
+  font-weight: 700 !important;
+  min-height: 40px !important;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 3px;
+}
+
+.appPrimaryButton {
+  margin: 0 1%;
+  min-width: 40%;
+  font-weight: 700 !important;
+  min-height: 40px !important;
+  color: black;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: 3px;
+  margin-right: 0;
+}
+
+.appButton:focus, .appButton:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color); 
+}
+
+.appPrimaryButton:hover {
+  color: #fff !important;
+  background: #1d1d1d;
+  border-color: #1d1d1d;
+}
+
+.ant-form-item-label {
+  font-weight: bold;
+}
+
+.formWidth {
+  min-width: 30%;
+}
+
+.backButtonDiv {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+
+/* ----------------------- Form ------------------------------ */
+
+.addDocumentForm {
+  text-align: left !important;
+}
+
+.addDocumentForm .ant-col .ant-form-item-label {
+  width: 50%;
+  text-align: left;
+}
+
+.formStyle {
+  margin-top: -10%;
+}
+
+
+/* ----------------------- Layout ------------------------------ */
+
+.mainLayout {
+  height: 100vh;
+}
+
+.header {
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+  margin: 0 2%;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.userIcon, .userDownArrow {
+  margin: 0 10%;
+}
+
+.userProfileDiv {
+  width: 20%;
+}
+
+.content {
+  margin: 24px 16px;
+  padding: 24;
+  height: 280;
+  overflow-y: scroll;
+}
+
+.collapseCard {
+  box-shadow: 0 0 20px lightgray;
+  border: none;
+  margin: 2% 0;
+}
+
+.backButtonDiv {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+
+/* -------------------------------------------- Filter Box ---------------------------------------- */
+
+.allPageHeader {
+  text-align: left !important;
+}
+
+.filterBox {
+  background-color: #fff;
+  border-radius: 5px;
+  /* padding: 1% 3%; */
+  padding: 1% 0%;
+}
+.filterBox .firstRow {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.filterBtn {
+  /* margin: 0 40%; */
+  margin: 0 30%;
+}
+
+/* -------------------------------------------- Table ---------------------------------------- */
+
+.tableEditIcon {
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.tableDeleteIcon {
+  color: darkred;
+  font-size: 18px;
+}
+
+.d-flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* -------------------------------------------- antd css ---------------------------------------- */
+
+.ant-steps-item-process .ant-steps-item-icon {
+  background: #1677ff !important;
+  border-color: #1677ff !important;
+}
+
+.ant-steps-item-icon {
+  background: white !important;
+  color: #1677ff !important ;
+  border-color: #1677ff !important;
+}
+
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1677ff !important;
+  text-shadow: 0 0 0.25px currentcolor !important;
+}
+
+
+.ant-btn-default {
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+  color: #1677ff !important;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.02);
+}
+
+
+.ant-upload-list-item-actions {
+  display:block;
+}
+
+
+.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input {
+  border-color: black;
+}
+
+
+/* :where(.css-dev-only-do-not-override-77zxj8).ant-form-item .ant-form-item-explain-error {
+  color: white;
+} */
